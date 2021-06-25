@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+	list-style: none;
+}
+html{
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+/*navigation css starts here*/
+.header{
+	width:100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%,0 0);
+	background-attachment: fixed;
+}
+.header:before , .navbar:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100% );
+    opacity: 0.3;
+    z-index: -1;
+}
+.my-container{
+    padding-left: 0;	
+    padding-right: 0;
+}
+.nav-item{
+	padding-left: 1.7rem;
+}
+.nav-item a{
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+.navbar-brand{
+	color:#fff;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.banner{
+	width:70%;
+	margin:0 auto;
+	text-align: center;
+	margin-top: 14rem;
+	color: #fff;
+}
+.banner h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.banner p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.banner a{
+	border:1px solid #fff;
+	border-radius: 1rem;
+	margin:0 0.6rem;
+	padding: 0.7rem 1.9rem;
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 600;
+	text-align: center;
+    transition: .5s linear;
+	text-transform: capitalize;
+}
+.banner a:hover{
+	color: #50d1c0;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	outline: none;
+}
+/*navigation css ends here*/
+
+/*three parts starts here*/
+.custom-row{
+	padding: 10% 0;
+}
+.three-parts .part{
+    background-color: #fff;
+    border:none;
+    border-radius: 5px;
+    padding: 2rem 0;
+    transition: 0.6s;
+}
+.three-parts .part .sign, .left-side .sign{
+	font-size: 2.5rem;
+	color: rgba(0,168,255);
+}
+.three-parts .part h2{
+	font-size: 2rem;
+	padding:1.2rem 0;
+}
+.three-parts .part p{
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+.three-parts .part:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+/*three parts ends here*/
+
+/*two parts css starts here*/
+.full-width{
+	width: 100%;
+	padding: 7% 0;
+	background-color: #f7f7f9;
+}
+.heading{
+	text-align: center;
+}
+.heading h1{
+    font-size: 2.5rem;
+}
+.heading p{
+	font-size: 1.3rem;
+	margin-bottom: 5rem;
+}
+.left-side .part .my-progress{
+	height: 1rem;
+	margin-bottom: 2.2rem;
+}
+.left-side .part h2{
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+.right-side .sign{
+	font-size: 2.6rem;
+	color: rgba(0,168,255);
+    margin-top: 1rem;
+}
+.right-side .part h3{
+	 font-size: 1.8rem;
+	 margin-bottom: 1rem;
+}
+.right-side .part p{
+	font-size: 1.1rem;
+	margin-bottom: 1.4rem;
+}
+
+/*two parts css ends here*/
+
+/*counter starts here*/
+.my-counter h1{
+	font-size: 2.5rem;
+	color: rgba(0,168,255);
+	margin-bottom: 0.5rem;
+}
+.my-counter p{
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 6rem;
+}
+
+/*counter ends here*/
+
+/*our best pricing starts here*/
+
+.pricing-fullwidth{
+	width:100%;
+	padding: 7% 0;
+    background-color:#16c9f6;
+    background: linear-gradient(160deg, #16c9f6 55% ,#fff 0%);
+}
+.pricing-fullwidth .heading h1{
+	font-size: 3rem;
+}
+.my-card{
+	text-align: center;
+	margin-top: 5rem;
+	transition: 0.4s ease;
+}
+.my-card .card-header{
+	font-size: 2rem;
+	font-weight: 600;
+	background-color: #fff;
+	padding: 1rem 0;
+}
+.my-card .card-body{
+	line-height: 2.7rem;
+	padding: 2rem 0;
+	color: #606060;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.money{
+	font-size: 2.7rem;
+	font-weight: lighter;
+}
+.my-card .card-footer{
+	background-color: #fff;
+	font-size: 1.5rem;
+    color: rgba(0,168,255);
+    padding: 1.8rem 0; 
+}
+.my-card .card-footer a{
+	border:1px solid #50d1c0;
+	border-radius: 1rem;
+	padding: 0.7rem 1.7rem;
+	margin: 2rem 0;
+	color: #50d1c0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+.my-card:hover a{
+	color: #fff;
+	background-color: #50d1c0;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.my-card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.my-card:hover .card-header,.my-card:hover .money{
+	color: #50d1c0;
+}
+.card-ontop{
+	 transform: translateY(-20px);
+	 box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/*our best pricing ends here*/
+
+/*our happy clients starts here*/
+
+.my-row{
+	padding-top: 4rem;
+}
+.box{
+	border:1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 6rem;
+}
+.box .image{
+	width:100px;
+	border-radius: 100%;
+}
+.box p{
+	padding: 1rem 0.6rem;
+}
+.box h2{
+	padding: 0 0.6rem;
+	font-size: 1.7rem;
+}
+.box:hover{
+	background-color: #16c9f6;
+}
+.box:hover h2 , .box:hover p{
+	color: #fff;
+}
+.carousel-indicators li{
+	background-color: #16c9f6;
+ }
+/*our happy clients ends here*/
+
+/*form starts here*/
+.form-full-width{
+	width:100%;
+	padding: 9% 0;
+	margin-top: 50px;
+	background-color:#16c9f6;
+    background: linear-gradient(330deg, #16c9f6 55% ,#fff 0%);
+}
+.form-full-width .heading h1{
+	font-size: 2.8rem;
+}
+.form-group textarea{
+	resize: none;
+}
+.change{
+	width:80%;
+	height: 50px;
+}
+.my-button{
+    border:1px solid #16c9f6;
+	border-radius: 1rem;
+	margin:0.9rem 0;
+	padding: 1rem 1.7rem;
+	color: #16c9f6;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-align: center;
+	background-color: transparent;
+}
+form:hover .my-button{
+    background-color:  #fff;
+    color:#50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);        
+	outline:none;           
+}
+/*form ends here*/
+
+/*newsletter css starts here*/
+.news-letter{
+	width:75%;
+	padding: 0 0.5rem;
+}
+.news-letter .news-input{
+    border-radius: 100px 0 0 100px;
+    height: 50px;
+}
+.news-letter .news-input-text{
+	width:110px;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	background-color: #16c9f6;
+	border-radius: 0 100px 100px 0;
+}
+/*newsletter css ends here*/
+
+/*footer css section starts here*/
+.footer-parts{
+	width:100%;
+	background-color: #00abff;
+	padding :5% 0 2% 0;
+}
+.footer-part{
+	margin-bottom: 20px;
+}
+.footer-part h2 {
+	margin-bottom: 1.3rem;
+	font-size: 2rem;
+}
+.footer-part p {
+	font-size: 1.1rem;
+	line-height: 27px;
+}
+.center-part ul li{
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
+.center-part a{
+	color: #fff;
+}
+.news-letter .bottom-input-text{
+	height: 50px;
+}
+.copy-right{
+	font-size: 1.4rem;
+	margin-top: 20px;
+}
+#arrow-btn{
+	color: #fff;
+	background-color: #00abff;
+	position: fixed;
+	right:35px;
+	bottom: 25px;
+	font-size: 1.5rem;
+	padding: 0.7rem;
+	border-radius: 15px;
+}
+#arrow-btn:hover{
+	color: #00abff;
+	background-color: #fff;
+}
+/*footer css section ends here*/
+
+
+
+/*media query starts here*/
+
+@media only screen and (max-width:991px){
+	
+.nav-bar{
+	margin-top: 50px;
+	text-align: center;
+}
+.nav-item{
+	padding-left: 0;
+	padding-bottom: 2rem;
+}
+.banner h1{
+	font-size: 2.5rem;
+}
+.banner p{
+	font-size: 1.3rem;
+}
+.left-side{
+	margin-bottom: 70px;
+}
+.card-ontop{
+	transform: translateY(0px);
+}
+.change{
+	width:100%;
+}
+.news-letter{
+	width:100%;
+}
+}
+
+@media only screen and (max-width:767px){
+.banner h1{
+	font-size: 2.3rem;
+}
+.my-card .card-footer a{
+	padding: 1rem 2.1rem;
+}
+.center-part ul li{
+	text-align: start;
+}
+.footer-part p,
+.center-part ul {
+    margin-bottom: 30px;
+}
+#arrow-btn{
+	right:5px;
+	bottom: 5px;
+}
+}
+
+@media only screen and (max-width:600px){
+.banner{
+    margin-top: 11rem;
+}
+.banner a{
+	font-size: 1.7rem;
+	display: block;
+	width:205px;
+	height: 60px;
+	margin: 20px auto 0 auto;
+}
+}
+
+@media only screen and (max-width:500px){
+
+.banner h1{
+	font-size: 2.1rem;
+}
+.banner p{
+	font-size: 1.2rem;
+}	
+.my-button{
+	padding: 1rem 1.4rem;
+}	
+.counter-heading .heading h1,
+.newsletter-heading .heading h1{
+    font-size: 2rem;
+}
+.copy-right{
+	font-size: 1.2rem;
+}
+}
+
+@media only screen and (max-width:450px){
+.navbar-brand{
+	font-size: 1.8rem;
+}
+.banner p{
+	font-size: 1rem;
+}	
+.full-width .heading h1{
+	font-size: 2rem;
+}
+.full-width .heading p{
+	font-size: 1rem;
+}
+.counter-heading .heading h1{
+	font-size: 1.8rem;
+}
+.pricing-fullwidth .heading h1{
+    font-size: 2.2rem;
+}	
+.happy-clients .heading h1{
+	font-size: 1.9rem;
+}	
+.happy-clients p{
+	font-size: 1rem;
+}
+.form-full-width .heading h1{
+	font-size: 2.5rem;
+}
+.newsletter-heading .heading h1{
+    font-size: 2.1rem;
+}
+.copy-right{
+	padding-bottom: 35px;
+}
+}
+
+@media only screen and (max-width:400px){
+.my-button{
+	padding: 1rem 1.1rem;
+}	
+}
